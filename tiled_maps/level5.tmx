@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="16" tilewidth="32" tileheight="24" nextobjectid="20">
+ <tileset firstgid="1" name="Ugh!!!!!!!!_5_1" tilewidth="32" tileheight="24" tilecount="320">
+  <image source="Ugh!!!!!!!!_5_1.png" width="640" height="400"/>
+ </tileset>
+ <tileset firstgid="321" name="Ugh!!!!!!!!_5_2" tilewidth="32" tileheight="24" tilecount="320">
+  <image source="Ugh!!!!!!!!_5_2.png" width="640" height="400"/>
+ </tileset>
+ <layer name="background" width="20" height="16">
+  <data encoding="base64" compression="zlib">
+   eJzF0UVvVVEUBtDXF2BM8eLuFB/g1Fugbri7u/8AHCZI0uJMKF6sCe6a4J4ACZAAfwBIsNURN+UN6IidrOQ7+5yzc3JvXFQoFE8CiSSRTAqppDGIwQwhnQwyySKbHHLJI58CChnKMIYzgpGMYjRjGMs4xjOBiUxiMlOYyjSmM4OZzGI2c5jLPOazgIUsYjFLWMoylrOClVSmVjm/mjWsZR3r2cBGNkWYt1lvC1vZFtgvkovZzg52sovd7GEv+yLM269XwgEOcojDHOEoxyjlOCc4ySlOUxaYd0Y+yznOc4GLXOIyV7jKNa5zg5vc4jZ3uBuYd0++zwMe8ojHPOEpz3jOC17yKnD3tfyGt4HeO/k9HwK9j/InPlfyv5XXF3e+8i1w97v8g5/8Ku+HQ6Go8J/9KnJVqoX/GhexqjsXTQ1qUova1KEu9YihPg1oSCMa04SmNKM5LWhJK1rThra0oz0d6EgnYulMF7rSje70oGeFt/ey7k0f+tKP/gxgIHHEk0AiSSSTQippFealW2eQSRbZ5JBLHvkUUPiP3/B/12+nQ2RI
+  </data>
+ </layer>
+ <layer name="ground" width="20" height="16">
+  <data encoding="base64" compression="zlib">
+   eJzt0DcOwkAURdHxUJBhh+SwATIyOdSEBnrCFmAPsAdoybHmUlAg2cJG7uBJp5jR/0+jEeK3oipClFBGBVXUUEcDTbTQVoz1dZjrooe+xs6Au6HBrmdGzI4xwdTEnl5mdMwt6HllQdfSwr4VXWsDfRtmtthhjwOOOOGMC6644W7yfVIKYZPvd3bODjjhghseeOGDX2p3/fM5Af4uiBDCiCCKGOJIIPnF/6bYSSODLHLIo4CiTt8Dtc0kIw==
+  </data>
+ </layer>
+ <objectgroup name="landing_floors">
+  <object id="1" name="floor_1" x="0" y="48" width="320" height="24"/>
+  <object id="2" name="floor_2" x="352" y="168" width="288" height="24"/>
+  <object id="4" name="floor_4" x="192" y="312" width="256" height="24"/>
+  <object id="6" name="floor_3" x="64" y="216" width="128" height="24"/>
+  <object id="7" name="cave_1" x="128" y="72">
+   <ellipse/>
+  </object>
+  <object id="8" name="cave_2" x="448" y="192">
+   <ellipse/>
+  </object>
+  <object id="9" name="cave_3" x="96" y="240">
+   <ellipse/>
+  </object>
+  <object id="10" name="cave_3" x="416" y="336">
+   <ellipse/>
+  </object>
+  <object id="11" name="stop_4" x="320" y="336">
+   <ellipse/>
+  </object>
+  <object id="12" name="stop_2" x="512" y="192">
+   <ellipse/>
+  </object>
+  <object id="14" name="stop_3" x="96" y="240">
+   <ellipse/>
+  </object>
+  <object id="15" name="stop_1" x="192" y="72">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="drag_n_drop">
+  <object id="17" name="tree" x="160" y="192" width="64" height="48"/>
+  <object id="19" name="stone" x="192" y="336">
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

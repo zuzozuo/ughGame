@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="16" tilewidth="32" tileheight="24" nextobjectid="20">
+ <tileset firstgid="1" name="Ugh!!!!!!!!_2" tilewidth="32" tileheight="24" tilecount="320">
+  <image source="Ugh!!!!!!!!_2.png" width="640" height="400"/>
+ </tileset>
+ <layer name="background" width="20" height="16">
+  <data encoding="base64" compression="zlib">
+   eJyt0TVsFkAUAOAKNaBQQSuUChSKu064w4Q7LLjLgCRogkvCAAkuGyS4DLi7u7u768dA+NOUjZf7knv3Lu+Sd8FBQUEhhJKLMMKJIJIocpOHvESTj/zEEEsc8RSgIIUoTBGKkkAiSSRTjBSKk0oa6WRQgpJkUorSZFGGspSjPBWoSCUqU4WqVKM6NahJLWpTh7pBOUc96tOAhjSiMU1oSjOa04KWtKI1bf7Rry3taE8HOtKJznShK93oTg960oveOfTqQ1/60Z8BDGQQgxnCUIYxnBGMZBSjs/Uaw1jGMT7gfAITmcRkpjA1oD6N6cxgJrOYzRzmMo/5AfcXZHt3IYsC8sUsYSnLWM4KVrKK1azJYRZ/Yi3rAvL1bGAjm9jMFrayje3syNZjJ7vYzR72so/9HOAghzjMEY5yjOOc4CSnOM0ZznKO81zgIpe4zBWuco3r3OAmt7jNHe5yj/s84CGPeMwTnvKM57zgJa94zRve8o73fOAjn/jMF77yje/84OfvIQRbhBBKLsIIJ4JIoshNHvISTT7yE0MsccRTgIIUojBFKEoCiSSRTDFSKE4qaaSTEfz3fzLtS1GaLMpQNqD+v+IXT6Zvig==
+  </data>
+ </layer>
+ <layer name="ground" width="20" height="16">
+  <data encoding="base64" compression="zlib">
+   eJztztkNQFAURdGnLMMblGAqwdACGjJ2gNpsNVyRCDtZvydHqW+lYWDhEAv3EqTIkKMQ7pWoUKMRbl216NDfsPV0A0ZMmLFgFext2HHIr/29JN9TKkCICBoGFg4nBj0OBQ==
+  </data>
+ </layer>
+ <objectgroup name="landing_floor">
+  <object id="1" name="floor_1" x="32" y="48" width="96" height="24"/>
+  <object id="3" name="floor_2" x="256" y="144" width="128" height="24"/>
+  <object id="4" name="floor_3" x="416" y="336" width="224" height="24"/>
+  <object id="5" name="cave_1" x="32" y="72">
+   <ellipse/>
+  </object>
+  <object id="6" name="cave_2" x="320" y="168">
+   <ellipse/>
+  </object>
+  <object id="7" name="cave_3" x="608" y="360">
+   <ellipse/>
+  </object>
+  <object id="8" name="stop_1" x="128" y="72">
+   <ellipse/>
+  </object>
+  <object id="9" name="stop_2" x="384" y="168">
+   <ellipse/>
+  </object>
+  <object id="10" name="stop_3" x="544" y="360">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="drag_n_drop">
+  <object id="12" name="tree" x="224" y="144" width="64" height="48"/>
+  <object id="13" x="79" y="-77"/>
+  <object id="18" name="stone" x="416" y="360">
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>
