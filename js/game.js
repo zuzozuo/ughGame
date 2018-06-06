@@ -9,7 +9,7 @@ class Game{
         this.key = new Key();
         this.player = new Player(this.context, this.width/2 , this.height/2);
         this.gravity = new Vector(0, 0.15) //grawitacja
-        this.uplift = new Vector(0, -0.2)
+        this.uplift = new Vector(0, -0.26)
         this.water = 300; //y wody 
 
     }
@@ -21,8 +21,7 @@ class Game{
 
     update(){       
         this.player.acceleration.zero();
-        this.keyManager();        
-
+        this.keyManager();     
         this.waterManager();
         this.player.acceleration.addVec(this.gravity);         //zwiększanie przyśpieszenia
         this.player.update();
@@ -54,13 +53,30 @@ class Game{
         }
     }
 
-    render(){
-        this.context.beginPath();
-        this.context.moveTo(0, this.water);
+    waterRender(){
+        this.context.beginPath();        
+        this.context.globalAlpha = 0.7;
+        this.context.rect(0,this.water, this.width, this.height-this.water);
+        this.context.fillStyle = "#2e5cb8";
+        this.context.fill();
+
+
+        this.context.globalAlpha = 1;
+        this.context.moveTo(0, this.water);        
         this.context.lineTo(this.width, this.water);
         this.context.stroke();
-        this.player.render();
-        this.map.render();
+    }
+
+    clearScreen(){
+        this.context.fillStyle = '#b8b894'; //FIXME
+        this.context.fillRect(0, 0, this.width, this.height);
+    }
+
+    render(){
+        this.clearScreen();
+        this.map.render();        
+        this.player.render();        
+        this.waterRender();
     }
 
     

@@ -21,7 +21,10 @@ class Player{
 
     render(){
         this.context.beginPath();
+        this.context.globalAlpha = 1;
         this.context.rect(this.position.x - PLAYER_WIDTH/2, this.position.y - PLAYER_HEIGHT/2, PLAYER_WIDTH, PLAYER_HEIGHT)
+        this.context.fillStyle = "#b35900";
+        this.context.fill();
         this.context.stroke();
         
     }
