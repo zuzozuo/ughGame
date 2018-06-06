@@ -21,8 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	let game = new Game(backContext, width, height);
 	game.setup();
 
+	/*setInterval(function(){
+		console.log("x: " + game.player.velocity.x);
+		console.log("y: " + game.player.velocity.y);
+	}, 1000)*/
+	
 	function mainloop() {
-        backContext.fillStyle = 'blue';
+        backContext.fillStyle = 'blue'; //FIXME
         backContext.fillRect(0, 0, width, height);
 		game.update();
 		game.render();
