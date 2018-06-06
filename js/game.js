@@ -7,10 +7,11 @@ class Game{
         this.height = height;
         this.map = new Map(this.context);
         this.key = new Key();
-        this.player = new Player(this.context, this.width/2 , this.height/2);
+        this.player = new Player(this.context, this.width/2 , this.height/2, this.width, this.height);
         this.gravity = new Vector(0, 0.15) //grawitacja
         this.uplift = new Vector(0, -0.26)
         this.water = 300; //y wody 
+
 
     }
 
