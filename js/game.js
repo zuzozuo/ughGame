@@ -26,7 +26,7 @@ class Game{
         this.waterManager();
         this.player.acceleration.addVec(this.gravity);         //zwiększanie przyśpieszenia
         this.player.update();
-        
+        this.map.collisionWithPlayer(this.player.position.x - PLAYER_WIDTH / 2 , this.player.position.y - PLAYER_HEIGHT/2, PLAYER_WIDTH, PLAYER_HEIGHT)    
         
     }
 

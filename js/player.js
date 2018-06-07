@@ -7,8 +7,8 @@ class Player {
         this.position = new Vector(x, y);
         this.velocity = new Vector();
         this.acceleration = new Vector();
-        this.width = width;
-        this.height = height;
+        this.windowWidth = width;
+        this.windowHeight = height;
     }
 
     update() {
@@ -34,12 +34,12 @@ class Player {
             this.position.x = 0;
         }
 
-        if (this.position.x > this.width) {
-            this.position.x = this.width;
+        if (this.position.x > this.windowWidth) {
+            this.position.x = this.windowWidth;
         }
 
-        if (this.position.y > this.height * 1.5) {
-            this.position.y = this.height * 1.5
+        if (this.position.y > this.windowHeight * 1.5) {
+            this.position.y = this.windowHeight * 1.5
         }
     }
 
