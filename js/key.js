@@ -7,6 +7,7 @@ const KEY_ENTER = 13;
 const KEY_ESC = 27;
 const KEY_F1 = 112;
 const KEY_F2 = 113;
+const KEY_SHIFT = 9; 
 
 class Key {
     constructor() {
@@ -27,4 +28,6 @@ class Key {
     isPressed(key) {
         return (this.pressed[key]);
     }
+
+
 }

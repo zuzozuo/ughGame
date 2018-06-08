@@ -62,12 +62,8 @@ class Game{
         this.context.rect(0,this.water, this.width, this.height-this.water-16);
         this.context.fillStyle = "#2e5cb8";
         this.context.fill();
-
-
         this.context.globalAlpha = 1;
-        /*this.context.moveTo(0, this.water);        
-        this.context.lineTo(this.width, this.water);
-        this.context.stroke();*/
+
     }
 
     menuRender(){
@@ -85,7 +81,9 @@ class Game{
 
     render(){
         this.clearScreen();
-        this.map.render();        
+        if(this.key.isPressed(KEY_SPACEBAR)){
+            this.map.render();
+        }                
         this.player.render();        
         this.waterRender();
         this.menuRender();
