@@ -1,5 +1,5 @@
-const PLAYER_WIDTH = 42;
-const PLAYER_HEIGHT = 34;
+const PLAYER_WIDTH = 64//42;
+const PLAYER_HEIGHT = 64//34;
 
 class Player {
     constructor(context, x, y, width, height) {
@@ -9,6 +9,7 @@ class Player {
         this.acceleration = new Vector();
         this.windowWidth = width;
         this.windowHeight = height;
+        this.sprite = document.getElementById("sprite");
     }
 
     update() {
@@ -43,7 +44,7 @@ class Player {
         }
     }
 
-    render() {
+    debug() {
         this.context.beginPath();
         this.context.globalAlpha = 1;
         this.context.rect(this.position.x - PLAYER_WIDTH / 2, this.position.y - PLAYER_HEIGHT / 2, PLAYER_WIDTH, PLAYER_HEIGHT)
@@ -51,6 +52,12 @@ class Player {
         this.context.fill();
         this.context.stroke();
 
+    }
+
+    render(){
+        this.context.beginPath();
+        this.context.globalAlpha = 1;
+        this.context.drawImage(this.sprite, this.position.x - PLAYER_WIDTH / 2, this.position.y - PLAYER_HEIGHT / 2,);
     }
 
 

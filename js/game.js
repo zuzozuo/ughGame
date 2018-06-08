@@ -28,7 +28,16 @@ class Game{
         this.waterManager();
         this.player.acceleration.addVec(this.gravity);         //zwiększanie przyśpieszenia
         this.player.update();
-        this.map.collisionWithPlayer(this.player.position.x - PLAYER_WIDTH / 2 , this.player.position.y - PLAYER_HEIGHT/2, PLAYER_WIDTH, PLAYER_HEIGHT)    
+        if(this.map.collisionWithPlayer(this.player.position.x - PLAYER_WIDTH / 2 , this.player.position.y - PLAYER_HEIGHT/2, PLAYER_WIDTH, PLAYER_HEIGHT, this.player)){
+            console.log("KOLIZJA!");
+             // this.player.setOldPositions();
+           /*  let vec = new Vector(-this.player.velocity.x, this.player.velocity.y)
+             this.player.acceleration.addVec(vec);
+             this.player.update();*/
+         }
+ 
+        //this.player.updateOldPositions();               
+         
         
     }
 
