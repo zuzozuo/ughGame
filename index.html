@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
     <script src="js/key.js"></script>
     <script src="js/player.js"></script>
     <script src="js/map.js"></script>
-  <!--  <script>
+    <!--  <script>
         (document).addEventListener('keydown', function(e){
             console.log(e.keyCode)
         })
@@ -18,7 +19,13 @@
     </script> -->
     <title>Ugh!</title>
 </head>
+
 <body>
-    <canvas width="640" height="400" id="gameWindow"></canvas>    
+    <canvas width="640" height="400" id="gameWindow"></canvas>
+    <div style="overflow: hidden; height: 1px; width: 1px;">
+        <img src="maps/level1.jpg" id="background" />
+        <img src="maps/fakemenu.jpg" id="fakemenu" />
+    </div>
 </body>
+
 </html>

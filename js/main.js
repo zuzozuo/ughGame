@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	let backCanvas = document.createElement('canvas');
 	let backContext = backCanvas.getContext('2d');
 
+
 	let width = frontCanvas.width;
 	let height = frontCanvas.height;
 

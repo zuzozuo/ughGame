@@ -10,12 +10,14 @@ class Game{
         this.player = new Player(this.context, this.width/2 , this.height/2, this.width, this.height);
         this.gravity = new Vector(0, 0.15) //grawitacja
         this.uplift = new Vector(0, -0.26)
-        this.water = 300; //y wody 
-
+        this.water = 346; //y wody 
+        this.background = document.getElementById("background");
+        this.fakeMenu = document.getElementById("fakemenu");
 
     }
 
     setup(){
+               
 
 
     }
@@ -57,20 +59,28 @@ class Game{
     waterRender(){
         this.context.beginPath();        
         this.context.globalAlpha = 0.7;
-        this.context.rect(0,this.water, this.width, this.height-this.water);
+        this.context.rect(0,this.water, this.width, this.height-this.water-16);
         this.context.fillStyle = "#2e5cb8";
         this.context.fill();
 
 
         this.context.globalAlpha = 1;
-        this.context.moveTo(0, this.water);        
+        /*this.context.moveTo(0, this.water);        
         this.context.lineTo(this.width, this.water);
-        this.context.stroke();
+        this.context.stroke();*/
+    }
+
+    menuRender(){
+        this.context.beginPath();        
+        this.context.globalAlpha = 1;
+        //this.context.fillStyle = 'black';
+        this.context.drawImage(this.fakeMenu, 0, this.height-16);
     }
 
     clearScreen(){
         this.context.fillStyle = '#b8b894'; //FIXME
         this.context.fillRect(0, 0, this.width, this.height);
+        this.context.drawImage(this.background, 0, 0)
     }
 
     render(){
@@ -78,6 +88,7 @@ class Game{
         this.map.render();        
         this.player.render();        
         this.waterRender();
+        this.menuRender();
     }
 
     
